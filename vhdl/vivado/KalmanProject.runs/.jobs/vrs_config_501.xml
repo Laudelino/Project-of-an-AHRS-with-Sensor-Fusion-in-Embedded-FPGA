@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="vga_fifo_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/vga_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PLPS_FIFO_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/PLPS_FIFO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_conv_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_conv_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_mul_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_mul_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_sub_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_sub_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_add_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_MLA_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_MLA_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_sqrt_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_sqrt_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fp_div_synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_div_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="vga_fifo_synth_1"/>
+		<Parent Id="PLPS_FIFO_synth_1"/>
+		<Parent Id="fp_conv_synth_1"/>
+		<Parent Id="fp_mul_synth_1"/>
+		<Parent Id="fp_sub_synth_1"/>
+		<Parent Id="fp_add_synth_1"/>
+		<Parent Id="fp_MLA_synth_1"/>
+		<Parent Id="fp_sqrt_synth_1"/>
+		<Parent Id="fp_div_synth_1"/>
+	</Run>
+</Runs>
+

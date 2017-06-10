@@ -1,0 +1,587 @@
+
+*** Running vivado
+    with args -log fp_conv.vds -m64 -mode batch -messageDb vivado.pb -source fp_conv.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source fp_conv.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config  -id {BD 41-968}  -string {{xillybus_S_AXI}}  -new_severity {INFO} 
+# set_msg_config  -id {BD 41-967}  -string {{xillybus_ip_0/xillybus_M_AXI}}  -new_severity {INFO} 
+# set_msg_config  -id {BD 41-967}  -string {{xillybus_ip_0/xillybus_S_AXI}}  -new_severity {INFO} 
+# set_msg_config  -id {BD 41-678}  -string {{xillybus_S_AXI/Reg}}  -new_severity {INFO} 
+# set_msg_config  -id {BD 41-1356}  -string {{xillybus_S_AXI/Reg}}  -new_severity {INFO} 
+# set_msg_config  -id {BD 41-759}  -string {{xlconcat_0/In}}  -new_severity {INFO} 
+# set_msg_config  -id {Netlist 29-160}  -string {{vivado_system_processing_system7}}  -new_severity {INFO} 
+# create_project -in_memory -part xc7z020clg484-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# set_property ip_repo_paths C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vivado-essentials/vivado-ip [current_project]
+# read_ip C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vivado-essentials/vivado-ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'fp_conv' generated file not found 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_conv' generated file not found 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_conv' generated file not found 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_conv' generated file not found 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fp_conv' generated file not found 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files -all c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv.dcp]
+# set_property is_locked true [get_files C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file fp_conv.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top fp_conv -part xc7z020clg484-1 -mode out_of_context
+Command: synth_design -top fp_conv -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 239.328 ; gain = 81.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fp_conv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/synth/fp_conv.vhd:73]
+INFO: [Synth 8-3491] module 'floating_point_v7_0' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:84893' bound to instance 'U0' of component 'floating_point_v7_0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/synth/fp_conv.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'floating_point_v7_0__parameterized0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:85009]
+INFO: [Synth 8-3491] module 'floating_point_v7_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83233' bound to instance 'i_synth' of component 'floating_point_v7_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:85018]
+INFO: [Synth 8-638] synthesizing module 'floating_point_v7_0_viv__parameterized0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83361]
+INFO: [Synth 8-63] RTL assertion: "in get_registers " [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:12544]
+INFO: [Synth 8-638] synthesizing module 'axi_slave_2to1' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/axi_utils_v2_0/hdl/axi_utils_v2_0_vh_rfs.vhd:3260]
+INFO: [Synth 8-256] done synthesizing module 'axi_slave_2to1' (1#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/axi_utils_v2_0/hdl/axi_utils_v2_0_vh_rfs.vhd:3260]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv' (2#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'fix_to_flt_conv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:39074]
+INFO: [Synth 8-638] synthesizing module 'carry_chain' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' (2#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' (3#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' (3#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (3#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'lead_zero_encode' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:31387]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized0' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized4' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized4' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'mux4' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27747]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized5' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized5' (4#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27747]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized6' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized13' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized13' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized6' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'mux4__parameterized0' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27747]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized7' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized15' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized15' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized7' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'mux4__parameterized0' (5#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27747]
+INFO: [Synth 8-256] done synthesizing module 'lead_zero_encode' (6#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:31387]
+INFO: [Synth 8-638] synthesizing module 'norm_zero_det' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29118]
+INFO: [Synth 8-113] binding component instance 'mc' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29208]
+INFO: [Synth 8-113] binding component instance 'mc' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29208]
+INFO: [Synth 8-113] binding component instance 'mc' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29208]
+INFO: [Synth 8-113] binding component instance 'mc' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29208]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized8' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized17' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized17' (6#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized8' (6#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized9' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized19' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized19' (6#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized9' (6#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'norm_zero_det' (7#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29118]
+INFO: [Synth 8-638] synthesizing module 'shift_msb_first' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29890]
+INFO: [Synth 8-3919] null assignment ignored [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29980]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized10' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized10' (7#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'shift_msb_first' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:29890]
+INFO: [Synth 8-638] synthesizing module 'renorm_and_round_logic' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34800]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized11' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized21' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized21' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized11' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized12' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized23' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized23' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized12' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized13' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized25' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized25' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized13' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized14' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized27' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized27' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized14' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized15' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized29' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized29' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized15' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized16' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized31' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized31' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized16' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'flt_round_bit' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34355]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized1' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized17' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized17' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized1' (8#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-256] done synthesizing module 'flt_round_bit' (9#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34355]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized2' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Synth 8-113] binding component instance 'CARRY_MUX' to cell 'MUXCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27483]
+INFO: [Synth 8-113] binding component instance 'SUM_XOR' to cell 'XORCY' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27493]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized18' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized33' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized33' (9#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized18' (9#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized2' (9#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-638] synthesizing module 'carry_chain__parameterized3' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+INFO: [Synth 8-256] done synthesizing module 'carry_chain__parameterized3' (9#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27447]
+WARNING: [Synth 8-3848] Net EXP_OUT in module/entity renorm_and_round_logic does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34795]
+INFO: [Synth 8-256] done synthesizing module 'renorm_and_round_logic' (10#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34800]
+INFO: [Synth 8-638] synthesizing module 'fix_to_flt_conv_exp' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:38766]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized19' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized35' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized35' (10#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized19' (10#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized20' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_viv' declared at 'c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:274' bound to instance 'i_pipe' of component 'xbip_pipe_v3_0_viv' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26864]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized20' (10#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:26844]
+INFO: [Synth 8-256] done synthesizing module 'fix_to_flt_conv_exp' (11#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:38766]
+INFO: [Synth 8-638] synthesizing module 'flt_dec_op' [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:30246]
+INFO: [Synth 8-256] done synthesizing module 'flt_dec_op' (12#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:30246]
+INFO: [Synth 8-256] done synthesizing module 'fix_to_flt_conv' (13#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:39074]
+WARNING: [Synth 8-3848] Net m_axis_result_tuser_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83699]
+WARNING: [Synth 8-3848] Net m_axis_result_tlast_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83701]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_v7_0_viv__parameterized0' (14#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83361]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_v7_0__parameterized0' (15#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:85009]
+INFO: [Synth 8-256] done synthesizing module 'fp_conv' (16#1) [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/synth/fp_conv.vhd:73]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 308.367 ; gain = 150.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+INFO: [Synth 8-3295] tying undriven pin \CARRYS_Q_DEL.NOT_FAST_OP.CARRY_DEL :D[0] to constant 0 [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:27574]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 308.367 ; gain = 150.113
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_conv_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_conv_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 603.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_conv_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net EXP_OUT in module/entity renorm_and_round_logic does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:34795]
+WARNING: [Synth 8-3848] Net m_axis_result_tuser_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83699]
+WARNING: [Synth 8-3848] Net m_axis_result_tlast_not_abs in module/entity floating_point_v7_0_viv__parameterized0 does not have driver. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/floating_point_v7_0/hdl/floating_point_v7_0_vh_rfs.vhd:83701]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized4) to 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/EXP_INC_DELAY' (delay__parameterized4) to 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/\EXP_IN_DELAY.EXP_IN_DEL ' (delay__parameterized15) to 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/\EXP_RND2_DELAY.EXP_RND_DEL '
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/\EXP_IN_DELAY.EXP_OFF_OP_DEL ' (delay__parameterized15) to 'U0/i_synth/\FIX_TO_FLT_OP.SPD.OP /ROUND/\EXP_RND2_DELAY.EXP_OFF_RND_DEL '
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:420]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 603.973 ; gain = 445.719
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 603.973 ; gain = 445.719
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:43 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    55|
+|3     |LUT3  |    68|
+|4     |LUT4  |    14|
+|5     |LUT5  |    53|
+|6     |LUT6  |    54|
+|7     |MUXCY |    77|
+|8     |MUXF7 |     1|
+|9     |XORCY |    56|
+|10    |FDRE  |   174|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 603.973 ; gain = 445.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:28 . Memory (MB): peak = 603.973 ; gain = 118.961
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 603.973 ; gain = 445.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+270 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 603.973 ; gain = 414.566
+# rename_ref -prefix_all fp_conv_
+INFO: [Coretcl 2-1174] Renamed 38 cell refs.
+# write_checkpoint -noxdef fp_conv.dcp
+# catch { report_utilization -file fp_conv_utilization_synth.rpt -pb fp_conv_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 603.973 ; gain = 0.000
+# if { [catch {
+#   file copy -force C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.runs/fp_conv_synth_1/fp_conv.dcp C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim C:/Users/Laudelino/SkyDrive/Estudos/UTFPR/9th/TCC2/Proj/V144D/20160702/KalmanProject/vhdl/vivado/KalmanProject.srcs/sources_1/ip/fp_conv/fp_conv_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 16 12:45:00 2016...
